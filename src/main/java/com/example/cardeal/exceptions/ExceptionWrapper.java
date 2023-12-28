@@ -229,4 +229,17 @@ public class ExceptionWrapper
 
         return ResponseEntity.badRequest().body(exceptionMessage);
     }
+
+    @ExceptionHandler(RuntimeException.class)
+    @ResponseStatus(value = HttpStatus.BAD_REQUEST)
+    public ResponseEntity<ExceptionMessage> exceptionHandler(RuntimeException runtimeException)
+    {
+        ExceptionMessage exceptionMessage = new ExceptionMessage();
+
+        exceptionMessage.setStatusError(true);
+        exceptionMessage.setMessage("Unknown Error...!");
+        exceptionMessage.setLocalDateTime(LocalDateTime.now());
+
+        return ResponseEntity.badRequest().body(exceptionMessage);
+    }
 }
