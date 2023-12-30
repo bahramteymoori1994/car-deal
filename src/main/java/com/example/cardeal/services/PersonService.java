@@ -5,7 +5,7 @@ import com.example.cardeal.exceptions.personexceptions.PersonIdNotFoundException
 import com.example.cardeal.exceptions.ServiceException;
 import com.example.cardeal.model.entities.Person;
 import com.example.cardeal.model.enums.Role;
-import com.example.cardeal.model.repositories.PersonRepository;
+import com.example.cardeal.repositories.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;

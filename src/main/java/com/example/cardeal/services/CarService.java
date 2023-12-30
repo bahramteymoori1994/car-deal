@@ -5,9 +5,8 @@ import com.example.cardeal.exceptions.carexceptions.CarCompanyNotFoundException;
 import com.example.cardeal.exceptions.carexceptions.CarIdNotFoundException;
 import com.example.cardeal.exceptions.carexceptions.CarNotFoundException;
 import com.example.cardeal.model.entities.Car;
-import com.example.cardeal.model.entities.Person;
 import com.example.cardeal.model.enums.CarModel;
-import com.example.cardeal.model.repositories.CarRepository;
+import com.example.cardeal.repositories.CarRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

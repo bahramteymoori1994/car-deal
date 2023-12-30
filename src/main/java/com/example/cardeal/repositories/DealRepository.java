@@ -1,4 +1,4 @@
-package com.example.cardeal.model.repositories;
+package com.example.cardeal.repositories;
 
 import com.example.cardeal.model.entities.Deal;
 import org.springframework.data.jpa.repository.JpaRepository;

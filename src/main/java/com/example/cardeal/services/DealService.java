@@ -3,7 +3,7 @@ package com.example.cardeal.services;
 import com.example.cardeal.exceptions.ServiceException;
 import com.example.cardeal.exceptions.dealexceptions.IdDealNotFoundException;
 import com.example.cardeal.model.entities.Deal;
-import com.example.cardeal.model.repositories.DealRepository;
+import com.example.cardeal.repositories.DealRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

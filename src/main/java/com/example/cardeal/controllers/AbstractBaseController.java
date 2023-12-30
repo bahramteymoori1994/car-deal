@@ -40,12 +40,16 @@ public abstract class AbstractBaseController<S extends BaseServiceMethods<?, E>,
     }
 
     @GetMapping("/{id}")
+    @ResponseBody
+    @ResponseStatus(value = HttpStatus.OK)
     public E findById(@PathVariable("id") Long id) throws ServiceException
     {
         return service.findById(id);
     }
 
     @GetMapping()
+    @ResponseBody
+    @ResponseStatus(value = HttpStatus.OK)
     public List<E> findAll() throws ServiceException
     {
         return service.findAll();

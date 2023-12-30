@@ -3,7 +3,6 @@ package com.example.cardeal.exceptions;
 import com.example.cardeal.exceptions.carexceptions.CarCompanyNotFoundException;
 import com.example.cardeal.exceptions.carexceptions.CarNotFoundException;
 import com.example.cardeal.exceptions.personexceptions.*;
-import com.example.cardeal.model.entities.Car;
 import jakarta.validation.ConstraintViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,7 +11,6 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
-
 import java.sql.SQLIntegrityConstraintViolationException;
 import java.time.LocalDateTime;
 import java.util.NoSuchElementException;
